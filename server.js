@@ -4,16 +4,16 @@ const bcrypt = require('bcryptjs');
 const flash = require('connect-flash');
 const session = require('express-session');
 const passport = require('passport');
-const { ensureAuthenticated } = require('/Auth/auth');
+const { ensureAuthenticated } = require('./Auth/auth');
 const app = express();
 
 //passort 
-require('Auth/passport_Auth')(passport);
+require('./Auth/passport_Auth')(passport);
 
 //DB
-const User = require('../SL using EJS/models/User');
-const bm = require('../SL using EJS/models/bestmanager');
-const sd = require('../SL using EJS/models/solodance');
+const User = require('./models/User');
+const bm = require('./models/bestmanager');
+const sd = require('./models/solodance');
 const event = require('./models/events');
 
 
