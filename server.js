@@ -4,11 +4,11 @@ const bcrypt = require('bcryptjs');
 const flash = require('connect-flash');
 const session = require('express-session');
 const passport = require('passport');
-const { ensureAuthenticated } = require('../SL using EJS/Auth/auth');
+const { ensureAuthenticated } = require('/Auth/auth');
 const app = express();
 
 //passort 
-require('../SL using EJS/Auth/passport_Auth')(passport);
+require('Auth/passport_Auth')(passport);
 
 //DB
 const User = require('../SL using EJS/models/User');
