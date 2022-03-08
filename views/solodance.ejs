@@ -1,0 +1,11 @@
+Solo dance<br><br>
+<form action="/solodance" method="POST">
+    Name: <input type="text" name="name" 
+                value="<%= typeof name != 'undefined' ? name: '' %>"/><br><br>
+    Email: <input type="texr" name="mail"
+                value="<%= typeof mail != 'undefined' ? mail: '' %>"/><br><br>
+    <input type="submit" value="Register"/><br><br>
+</form>
+
+<br>
+<a href="/dashboard">back to dashboard</a>

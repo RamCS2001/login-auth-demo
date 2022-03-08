@@ -1,0 +1,13 @@
+<h1>Register</h1>
+<%- include('partials/messages') %>
+<form action="/register" method="POST">
+    username: <input type="text" name="username" 
+                value="<%= typeof username != 'undefined' ? username: '' %>"/><br><br>
+    Password: <input type="password" name="password"
+                value="<%= typeof password != 'undefined' ? password: '' %>"/><br><br>
+    Confirm Password: <input type="password"  name="Cpassword"
+                    value="<%= typeof Cpassword != 'undefined' ? Cpassword: '' %>"/><br><br>
+    <input type="submit" value="Register"/><br><br>
+</form>
+<a href="http://localhost:5000/login">Login</a><br><br>
+<a href="http://localhost:5000/">Home</a> 
