@@ -1,5 +1,9 @@
 <h1><%= name%></h1>
 Your Events
-
+<% if(typeof eventsReg != 'undefined'){ %> 
+    <% eventsReg.forEach(function(event){ %>
+        <%= event %><br>
+    <% }); %>   
+<% } %>
 <br><br>
 <a href="/dashboard">back to dashboard</a>
